@@ -11,7 +11,7 @@ int _islower(int c)
 	int ascii_z = 122;
 
 	if ((c >= ascii_a) && (c <= ascii_z))
-	{a
+	{
 		return (1);
 	}
 	else
