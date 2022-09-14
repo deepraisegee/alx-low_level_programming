@@ -4,6 +4,8 @@
 /**
   * _islower - checks if an alphabet is lower or not
   *
+  * @c: ascii decimal
+  *
   * Return: 1 if it's lower, otherwise 0
   */
 int _islower(int c)
