@@ -7,8 +7,8 @@
   */
 int _islower(int c)
 {
-	ascii_a = 97;
-	ascii_z = 122;
+	int ascii_a = 97;
+	int ascii_z = 122;
 
 	if ((c >= ascii_a) && (c <= ascii_c))
 	{
