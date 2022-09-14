@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
   * _islower - checks if an alphabet is lower or not
