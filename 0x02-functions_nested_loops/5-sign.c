@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
 
 /**
   * print_sign - prints the sign of a number
@@ -16,17 +15,17 @@ int print_sign(int n)
 
 	if (n > 0)
 	{
-		_putchar(ascii_plus);
+		putchar(ascii_plus);
 		return (1);
 	}
 	else if (n == 0)
 	{
-		_putchar(ascii_zero);
+		putchar(ascii_zero);
 		return (0);
 	}
 	else
 	{
-		_putchar(ascii_minus);
+		putchar(ascii_minus);
 		return (-1);
 	}
 }
