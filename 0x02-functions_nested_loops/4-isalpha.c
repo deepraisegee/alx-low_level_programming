@@ -19,7 +19,7 @@ int _isalpha(int c)
 	int is_A_Z = (c >= ascii_A) && (c <= ascii_Z);
 	int is_a_z = (c >= ascii_a) && (c <= ascii_z);
 
-	if (is_A_Z && is_a_z)
+	if (is_A_Z || is_a_z)
 	{
 		return (1);
 	}
