@@ -9,11 +9,13 @@
   */
 void print_numbers(void)
 {
+	int ascii_0 = 48;
 	int i = 0;
 
 	while (i < 10)
 	{
-		_putchar(i);
+		_putchar(ascii_0 + i);
+		i++;
 	}
 
 	_putchar('\n');
