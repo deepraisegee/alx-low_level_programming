@@ -11,7 +11,7 @@ int _isupper(int c)
 	int ascii_A = 65;
 	int ascii_Z = 90;
 
-	if ((n >= ascii_A) && (n <= ascii_Z))
+	if ((c >= ascii_A) && (c <= ascii_Z))
 	{
 		return (1);
 	}
