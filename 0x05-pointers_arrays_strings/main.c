@@ -4,7 +4,5 @@
 int main(void)
 {
 	char *text = "Adesanmi";
-	int n = _strlen(text);
-
-	printf("%d\n", n);
+	print_rev(text);
 }
