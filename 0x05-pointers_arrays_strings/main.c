@@ -4,5 +4,7 @@
 int main(void)
 {
 	char *text = "Adesanmi";
-	print_rev(text);
+	rev_string(text);
+
+	printf("%s\n", text);
 }
