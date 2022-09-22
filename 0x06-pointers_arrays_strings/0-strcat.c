@@ -30,9 +30,9 @@ int _strlen(char *s)
 char *_strcat(char *dest, char *src)
 {
 	char *string;
-	int n = _strlen(dest) - 1;
+	int n = _strlen(dest);
 
-	int *pDest = dest + n;
+	char *pDest = dest + n;
 
 	src = pDest;
 	string = dest;
