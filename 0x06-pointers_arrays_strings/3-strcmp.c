@@ -9,16 +9,8 @@
   */
 int _strcmp(char *s1, char *s2)
 {
-	while (*s1 != '\n' && *s2 != '\n')
-	{
-		if (*s1 != *s2)
-		{
+	while (*s1 == *s2++)
+		if (*s1++ == 0)
 			return (0);
-		}
-
-		s1++;
-		s2++;
-	}
-
-	return (1);
+	return (*(unsigned char *)s1 - *(unsigned char *) --s2);
 }
