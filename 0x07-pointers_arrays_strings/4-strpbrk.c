@@ -10,7 +10,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while (s[len] >= '\0')
+	while (s[len] != '\0')
 	{
 		len++;
 	}
@@ -37,7 +37,7 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; j < accept_len; j++)
 		{
-			if (accept[j] == s[i])
+			if (s[i] == accept[j])
 			{
 				return (&s[i]);
 			}
