@@ -1,24 +1,6 @@
 #include "main.h"
 
 /**
-  * _strlen - get the length of a string
-  * @s: pointer
-  *
-  * Return: the length of a string
-  */
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (s[len] != '\0')
-	{
-		len++;
-	}
-
-	return (len);
-}
-
-/**
   * _strpbrk - searches a string for any of a set of bytes
   * @s: pointer
   * @accept: pointer
@@ -27,21 +9,19 @@ int _strlen(char *s)
   */
 char *_strpbrk(char *s, char *accept)
 {
-	int s_len = _strlen(s);
-	int accept_len = _strlen(accept);
-
 	int i;
 	int j;
 
-	for (i = 0; i < s_len; i++)
+	for (i = 0; *s != '\n'; i++)
 	{
-		for (j = 0; j < accept_len; j++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j])
+			if (*s == accept[j])
 			{
-				return (&s[i]);
+				return (s);
 			}
 		}
+		s++;
 	}
 
 	return (NULL);
