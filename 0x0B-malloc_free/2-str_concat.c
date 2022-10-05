@@ -34,6 +34,12 @@ char *str_concat(char *s1, char *s2)
 	int i = 0;
 	int j = 0;
 
+	if (!s1 || !s2)
+		return (NULL);
+
+	if (!string)
+		return (NULL);
+
 	while (i < s1len)
 	{
 		string[i] = s1[i];
