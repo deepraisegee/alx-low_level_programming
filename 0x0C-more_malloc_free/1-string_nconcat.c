@@ -35,7 +35,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!p)
 		return (NULL);
 
-	if (!s1 || !s2)
+	if (!s1)
+		return (s2);
+
+	if (!s2)
 		return (s1);
 
 	if (n >= s2len)
