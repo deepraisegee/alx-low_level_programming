@@ -41,6 +41,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!s2)
 		return (s1);
 
+	if (!s1 && !s2)
+		return ("");
+
 	if (n >= s2len)
 	{
 		for (i = 0; i < s1len; i++)
