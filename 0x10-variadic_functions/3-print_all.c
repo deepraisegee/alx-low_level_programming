@@ -1,7 +1,22 @@
 #include <stdio.h>
-#include <string.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
+
+/**
+  * _strlen - get the length of a string
+  * @s: char pointer
+  *
+  * Return: the length of a string
+  */
+int _strlen(const char * const s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+
+	return (i);
+}
 
 /**
   * print_all - prints anything
@@ -12,7 +27,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	int i, n = strlen(format);
+	int i;
+	int n = _strlen(format);
 
 	va_start(args, format);
 	for (i = 0; i < n; i++)
