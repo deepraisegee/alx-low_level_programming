@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -m -S $CFILE
+gcc -mgnu-as $CFILE
