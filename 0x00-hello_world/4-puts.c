@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*
+/**
  * main - print text to output
  *
  * Return: 0
