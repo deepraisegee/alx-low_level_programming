@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -mgnu-as $CFILE
+gcc -masm=intel -S $CFILE
