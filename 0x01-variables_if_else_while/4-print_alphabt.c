@@ -14,6 +14,7 @@ int main(void)
 		if (alp == 'q')
 			continue;
 		putchar(alp);
+		alp++;
 	}
 	putchar('\n');
 
