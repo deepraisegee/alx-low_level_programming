@@ -12,11 +12,11 @@ int main(void)
 	while (alp != 'Z' + 1)
 	{
 		putchar(alp);
-		alp++;
 		if (alp == 'z')
 		{
-			alp = 'A';
+			alp = 'A' - 1;
 		}
+		a++;
 	}
 	putchar('\n');
 
