@@ -12,7 +12,7 @@ int main(void)
 	while (alp <= 'z')
 	{
 		if (alp == 'q')
-			continue;
+			alp += 1;
 		putchar(alp);
 		alp++;
 	}
