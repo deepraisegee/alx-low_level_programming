@@ -19,7 +19,7 @@ int main(void)
 
 	if (n < 0)
 	{
-		np *= -1;
+		np = n * -1;
 		ld = np % 10;
 	}
 
