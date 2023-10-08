@@ -20,7 +20,7 @@ int main(void)
 	if (n < 0)
 	{
 		np = n * -1;
-		ld = np % 10;
+		ld = (np % 10) * -1;
 	}
 
 	if (ld > 5)
