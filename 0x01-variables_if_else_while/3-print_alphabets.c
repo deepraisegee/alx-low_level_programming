@@ -16,7 +16,7 @@ int main(void)
 		{
 			alp = 'A' - 1;
 		}
-		a++;
+		alp++;
 	}
 	putchar('\n');
 
