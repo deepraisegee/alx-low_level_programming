@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stfio.h>
 
 /**
   * main - print number if it's +VE, -VE or 0
