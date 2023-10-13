@@ -17,26 +17,27 @@ void print_remaining_days(int month, int day, int year)
 		if (month == 2 && day > 29)
 		{
 			printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
-			return;
 		}
-
-		switch (day)
+		else
 		{
-		case 2:
-			day *= 29;
-			break;
-		case 4:
-		case 6:
-		case 9:
-		case 11:
-			day *= 30;
-			break;
-		default:
-			day *= 31;
-			break;
-		}
+			switch (day)
+			{
+			case 2:
+				day *= 29;
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				day *= 30;
+				break;
+			default:
+				day *= 31;
+				break;
+			}
 
-		printf("Day of the year: %d\n", day);
-		printf("Remaining days: %d\n", 366 - day);
+			printf("Day of the year: %d\n", day);
+			printf("Remaining days: %d\n", 366 - day);
+		}
 	}
 }
