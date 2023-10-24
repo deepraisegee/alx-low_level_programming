@@ -10,5 +10,6 @@ char *_strchr(char *, char);
 unsigned int _strspn(char *, char *);
 char *_strpbrk(char *, char *);
 void set_string(char **, char *);
+char *_strstr(char *, char *);
 
 #endif /* MAIN_H */
