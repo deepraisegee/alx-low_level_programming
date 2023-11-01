@@ -31,7 +31,10 @@ char *_strdup(char *str)
 	unsigned int l = _strlen(str);
 
 	if (str == NULL)
+	{
+		printf("failed to allocate memory\n");
 		return (str);
+	}
 
 	s = malloc(sizeof(char) * l + 1);
 
