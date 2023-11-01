@@ -31,9 +31,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int l2 = _strlen(s2);
 
 	if (!s1)
-		s1 = "";
+		l1 = 0;
 	if (!s2)
-		s2 = "";
+		l2 = 0;
 
 	s = malloc(sizeof(char) * l1 + l2 + 1);
 
