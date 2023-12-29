@@ -8,7 +8,7 @@
   *
   * Return: a^b
   */
-int _pow(int a, int b)
+unsigned int _pow(unsigned int a, unsigned int b)
 {
 	if (b == 0)
 		return (1);
@@ -22,9 +22,9 @@ int _pow(int a, int b)
   *
   * Return: reversed number
   */
-int rev_int(int n)
+unsigned int rev_int(unsigned int n)
 {
-	int r = 0;
+	unsigned int r = 0;
 
 	while (n != 0)
 	{
@@ -43,7 +43,7 @@ int rev_int(int n)
   */
 int _atoi(char *s)
 {
-	int i, c, r, is_neg = 0;
+	unsigned int i, c, r, is_neg = 0;
 
 	if (!s)
 		exit(EXIT_FAILURE);
@@ -69,7 +69,12 @@ int _atoi(char *s)
 	if (i == 0)
 		return (0);
 
+	if (s[c] == '0')
+		r = rev_int(r) * 10;
+	else
+		r = rev_int(r);
+
 	if (is_neg)
-		return (-rev_int(r));
-	return (rev_int(r));
+		return (-r);
+	return (r);
 }
