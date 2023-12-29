@@ -18,7 +18,7 @@ int _pow(int a, int b)
 
 /**
   * rev_int - reverse an integer
-  * n: number to reverse
+  * @n: number to reverse
   *
   * Return: reversed number
   */
