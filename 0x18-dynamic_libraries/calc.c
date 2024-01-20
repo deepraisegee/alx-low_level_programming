@@ -21,7 +21,7 @@ int add(int a, int b)
   */
 int sub(int a, int b)
 {
-    return (a - b);
+	return (a - b);
 }
 
 /**
@@ -33,7 +33,7 @@ int sub(int a, int b)
   */
 int mul(int a, int b)
 {
-    return (a * b);
+	return (a * b);
 }
 
 /**
@@ -45,5 +45,17 @@ int mul(int a, int b)
   */
 int div(int a, int b)
 {
-    return (a / b);
+	return (a / b);
+}
+
+/**
+  * mod - mod of 2 numbers
+  * @a: 1st No
+  * @b: 2nd No
+  *
+  * Return: the result
+  */
+int mod(int a, int b)
+{
+	return (a % b);
 }
